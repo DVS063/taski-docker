@@ -99,8 +99,8 @@ jobs:
           # устанавливаем тег latest, чтобы потом
           # на сервере и в docker-compose.yml не указывать версию
           tags: dvs063/taski_backend:latest
-# И для фронта
- frontend_tests:
+  # И для фронта
+  frontend_tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -143,8 +143,7 @@ jobs:
           context: ./frontend/
           push: true
           tags: username/taski_frontend:latest
-
-# И nginx
+  # И nginx
   build_gateway_and_push_to_docker_hub:
     name: Push gateway Docker image to DockerHub
     runs-on: ubuntu-latest
