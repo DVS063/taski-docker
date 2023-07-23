@@ -142,7 +142,7 @@ jobs:
         with:
           context: ./frontend/
           push: true
-          tags: username/taski_frontend:latest
+          tags: dvs063/taski_frontend:latest
   # И nginx
   build_gateway_and_push_to_docker_hub:
     name: Push gateway Docker image to DockerHub
